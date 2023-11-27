@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loxone Lighting Control</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="dashboard">
+      <img
+        id="lightIcon"
+        class="mar-10"
+        src="light-icon.png"
+        alt="Light Icon"
+      />
+      <div id="address" class="mar-10">
+        <label for="loxoneAddress">Loxone Miniserver Address:</label>
+        <input
+          type="text"
+          id="loxoneAddress"
+          placeholder="Enter Loxone Miniserver IP address"
+        />
+      </div>
+      <div id="light-options" class="mar-10">
+        <label for="lightingController">Lighting Controller:</label>
+        <select id="lightingController">
+          <option value="Living-Room-Light">Living Room Light</option>
+          <option value="Kitchen-Light">Kitchen Light</option>
+          <option value="Bedroom-Light">Bedroom Light</option>
+        </select>
+      </div>
+      <div id="icon-upload" class="mar-10">
+        <label for="iconUpload">Upload Icon:</label>
+        <input
+          type="file"
+          id="iconUpload"
+          accept="image/*"
+          onchange="uploadIcon()"
+        />
+      </div>
+      <button class="mar-10" onclick="toggleLight()">Submit</button>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

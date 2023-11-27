@@ -1,0 +1,12 @@
+#dashboard {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mar-10 {
+  margin: 10px;
+}
+
+#lightIcon {
+  object-fit: contain;
+}
